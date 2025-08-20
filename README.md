@@ -124,7 +124,7 @@ An interactive Power BI dashboard was created to visualize and explore the insig
 ## How to Run This Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/coffee-sales-analysis.git
+   git clone https://github.com/jahannasrat0607/coffee-sales-analysis.git
    ```
 2. Import the dataset into your SQL environment (MySQL/Postgres).
 3. Run queries from sql_queries/
