@@ -42,19 +42,56 @@ CHANGE COLUMN ï»¿transaction_id transaction_id INT;
 ```
 ---
 
-## 🎯 Business Questions / KPIs
+## Business Questions / KPIs
 The following questions were answered through SQL queries and visualized in Power BI:  
+-- 1. Monthly Sales Trend
 
-1. **Total Sales & Revenue Trends** – What are the overall sales trends over time?  
-2. **Peak Periods** – Which months, weekdays, and times of the day generate the most sales?  
-3. **Store Performance** – Which store location performs best?  
-4. **Top Products** – Which products drive the highest revenue and sales quantity?  
-5. **Customer Behavior** – How do weekday vs weekend sales compare?  
-6. **Month-over-Month Growth** – How does performance change across months?  
+Question: How do sales vary month by month?
+Insight: Sales consistently grew from January to June, peaking in June at $166K+ total sales. This shows strong seasonal growth, likely due to summer demand.
 
+-- 2. Sales by Store Location
+
+Question: Which store locations perform best?
+Insight: Hell’s Kitchen consistently outperformed other locations, leading in 4 out of 6 months.
+Astoria and Lower Manhattan showed competitive sales, with Astoria occasionally surpassing Lower Manhattan.
+
+This indicates that Hell’s Kitchen is the strongest market, but demand is healthy across all branches.
+
+-- 3. Peak Sales Days & Hours
+
+Question: What are the busiest times for sales?
+Insight:
+Peak day: Weekdays recorded the highest sales volume every month except the month of April.
+Peak hours: Between 8 AM - 10 AM, aligning with morning coffee rush.
+
+This highlights strong commuter-driven demand, suggesting opportunities for promotions in these slots.
+
+-- 4. Top Products by Sales
+
+Question: Which products generate the highest revenue?
+Insight:
+Barista Espresso is the clear leader with $91K+ sales.
+Other top performers include Brewed Chai Tea, Hot Chocolate, and Gourmet Brewed Coffee.
+
+This shows a balanced demand for both coffee and non-coffee beverages, useful for menu planning.
+
+-- 5. Category-Level Insights
+
+Question: Which product categories dominate sales?
+Insight:
+Coffee-based products are the biggest contributors, but tea-based beverages (chai & herbal/black teas) also generate significant revenue.
+Food items like scones also appear in the top 10 products, showing good cross-selling potential.
+
+-- 6. Top Coffee Product in May
+
+Question: What is the best-performing coffee product in a specific month (May)?
+Insight:
+Barista Espresso again leads in May with $20.4K sales, followed by Gourmet Brewed Coffee ($15.5K).
+
+Seasonal promotions on espresso could further strengthen performance during peak months.
 ---
 
-## 🛠️ SQL Analysis
+## SQL Analysis
 All SQL queries used to explore and answer the above questions are available in [`sql_queries/`](./sql_queries).  
 
 Each query focused on:  
@@ -71,30 +108,48 @@ Each query focused on:
 An interactive Power BI dashboard was created to visualize and explore the insights:  
 
 ### Key Visuals
-- **Sales Calendar Heatmap** – Sales trends across months and years.  
-- **Sales by Weekdays** – Bar chart showing weekday vs weekend patterns.  
-- **Sales by Store Location** – Map/Bar chart comparing store performance.  
-- **Top 10 Products** – Bar/Column chart ranking best-selling products.  
-- **Monthly Sales & YoY Growth** – Line chart to observe growth patterns.  
+- **Sales Calendar Heatmap** – Sales trends across Days and Hours.  
+- **Sales by Weekdays** – Donut chart showing weekday vs weekend patterns.  
+- **Sales by Store Location** – Bar chart comparing store performance.  
+- **Top 10 Products** – Bar chart ranking best-selling products.  
+- **Monthly Sales & Monthly Growth** – Line chart to observe growth patterns. 
 
-📷 *Dashboard Preview:*  
-![Dashboard Screenshot](images/dashboard.png)  
-
----
-
-## Key Insights & Findings
-- Sales **peak on weekends**, with higher average transaction amounts.  
-- **Espresso** and **Latte** are the top-selling products driving revenue.  
-- The **Downtown store** outperforms other locations consistently.  
-- A strong **growth trend** is observed in *[specify year if dataset shows]*.  
-- Customers show a preference for morning purchases (*8 AM – 11 AM peak*).  
+*Dashboard Preview:*  
+![Dashboard Screenshot 1](images/powerbi_dashboard.png)  
+![Dashboard Screenshot 2](images/dashboard_hover_over.png) 
 
 ---
 
-## 🚀 How to Run This Project
+## How to Run This Project
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/coffee-sales-analysis.git
    ```
+2. Import the dataset into your SQL environment (MySQL/Postgres).
+3. Run queries from sql_queries/
+4. Open the Power BI file (Coffee_Sales_Dashboard.pbix) to explore the dashboard.
+---
+## Conclusion
 
+This project demonstrates how SQL + Power BI can be combined to analyze sales data and deliver actionable insights for decision-making.
+The findings can help coffee shop owners optimize store operations, inventory planning, and marketing strategies based on customer behavior.
 
+## Repository Structure
+
+coffee-sales-analysis/
+│── data/                 # Dataset
+│── sql_queries/          # All SQL query scripts
+│── images/               # Dashboard screenshots
+│── coffee_shop_sales_dashboard.pbit   # Power BI file
+│── README.md             # Project documentation
+
+## Tools & Technologies
+
+-- MySQL (Workbench)
+-- Power BI
+-- GitHub
+
+## Author
+Nasrat Jahan
+nasratjahan166@gmail.com
+https://www.linkedin.com/in/nasrat-jahan-95aa76326/
