@@ -44,12 +44,12 @@ CHANGE COLUMN ï»¿transaction_id transaction_id INT;
 
 ## Business Questions / KPIs
 The following questions were answered through SQL queries and visualized in Power BI:  
--- 1. Monthly Sales Trend
+- Monthly Sales Trend
 
 Question: How do sales vary month by month?
 Insight: Sales consistently grew from January to June, peaking in June at $166K+ total sales. This shows strong seasonal growth, likely due to summer demand.
 
--- 2. Sales by Store Location
+- Sales by Store Location
 
 Question: Which store locations perform best?
 Insight: Hell’s Kitchen consistently outperformed other locations, leading in 4 out of 6 months.
@@ -57,7 +57,7 @@ Astoria and Lower Manhattan showed competitive sales, with Astoria occasionally 
 
 This indicates that Hell’s Kitchen is the strongest market, but demand is healthy across all branches.
 
--- 3. Peak Sales Days & Hours
+- Peak Sales Days & Hours
 
 Question: What are the busiest times for sales?
 Insight:
@@ -66,7 +66,7 @@ Peak hours: Between 8 AM - 10 AM, aligning with morning coffee rush.
 
 This highlights strong commuter-driven demand, suggesting opportunities for promotions in these slots.
 
--- 4. Top Products by Sales
+- Top Products by Sales
 
 Question: Which products generate the highest revenue?
 Insight:
@@ -75,20 +75,21 @@ Other top performers include Brewed Chai Tea, Hot Chocolate, and Gourmet Brewed 
 
 This shows a balanced demand for both coffee and non-coffee beverages, useful for menu planning.
 
--- 5. Category-Level Insights
+- Category-Level Insights
 
 Question: Which product categories dominate sales?
 Insight:
 Coffee-based products are the biggest contributors, but tea-based beverages (chai & herbal/black teas) also generate significant revenue.
 Food items like scones also appear in the top 10 products, showing good cross-selling potential.
 
--- 6. Top Coffee Product in May
+- Top Coffee Product in May
 
 Question: What is the best-performing coffee product in a specific month (May)?
 Insight:
 Barista Espresso again leads in May with $20.4K sales, followed by Gourmet Brewed Coffee ($15.5K).
 
 Seasonal promotions on espresso could further strengthen performance during peak months.
+
 ---
 
 ## SQL Analysis
@@ -115,8 +116,8 @@ An interactive Power BI dashboard was created to visualize and explore the insig
 - **Monthly Sales & Monthly Growth** – Line chart to observe growth patterns. 
 
 *Dashboard Preview:*  
-![Dashboard Screenshot 1](images/powerbi_dashboard.png)  
-![Dashboard Screenshot 2](images/dashboard_hover_over.png) 
+![Dashboard Screenshot 1](images/powerbi_dashboard.jpg)  
+![Dashboard Screenshot 2](images/dashboard_hover_over.jpg) 
 
 ---
 
@@ -145,9 +146,9 @@ coffee-sales-analysis/
 
 ## Tools & Technologies
 
--- MySQL (Workbench)
--- Power BI
--- GitHub
+- MySQL (Workbench)
+- Power BI
+- GitHub
 
 ## Author
 Nasrat Jahan
