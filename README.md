@@ -16,7 +16,7 @@ The dataset used contains sales transactions from a coffee shop, including:
 - `product_type` – Specific product type  
 - `unit_price` – Price per unit  
 - `transaction_qty` – Quantity purchased  
-Time period: *[Jan 2023 to June 2023]* 
+Time period: Jan 2023 to June 2023
 ---
 
 ## Data Cleaning
@@ -136,14 +136,14 @@ This project demonstrates how SQL + Power BI can be combined to analyze sales da
 The findings can help coffee shop owners optimize store operations, inventory planning, and marketing strategies based on customer behavior.
 
 ## Repository Structure
-
+```graphql
 coffee-sales-analysis/
 │── data/                 # Dataset
 │── sql_queries/          # All SQL query scripts
 │── images/               # Dashboard screenshots
 │── coffee_shop_sales_dashboard.pbit   # Power BI file
 │── README.md             # Project documentation
-
+```
 ## Tools & Technologies
 
 - MySQL (Workbench)
@@ -151,6 +151,4 @@ coffee-sales-analysis/
 - GitHub
 
 ## Author
-Nasrat Jahan
-nasratjahan166@gmail.com
-https://www.linkedin.com/in/nasrat-jahan-95aa76326/
+Nasrat Jahan | nasratjahan166@gmail.com | https://www.linkedin.com/in/nasrat-jahan-95aa76326/
